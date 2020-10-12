@@ -1,3 +1,5 @@
+package Scale;
+
 public class Scale <T extends Comparable<T>> {
 
     private T left;
@@ -8,7 +10,7 @@ public class Scale <T extends Comparable<T>> {
         this.right = right;
     }
 
-    public T getHeaver(){
+    public T getHeavier(){
         if (this.left.compareTo(this.right) == 0) {
             return null;
         }else if (this.left.compareTo(this.right) < 1) {
@@ -16,7 +18,6 @@ public class Scale <T extends Comparable<T>> {
         }else {
             return left;
         }
-
     }
 
 }
